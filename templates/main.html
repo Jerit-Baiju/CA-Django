@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
 </head>
 <body data-layout-mode="dark">
+    {% include 'navbar.html' %}
     {% block content %}{% endblock content %}
+    </div>
     <script src="{% static 'libs/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'libs/simplebar/simplebar.min.js' %}"></script>

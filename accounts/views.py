@@ -3,4 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def profile(request):
-    return render(request, 'accounts/profile.html')
+    context = {
+        'nav': 'profile'
+    }
+    return render(request, 'accounts/profile.html', context)
