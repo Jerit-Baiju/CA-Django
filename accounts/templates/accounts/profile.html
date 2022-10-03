@@ -24,7 +24,7 @@
 
         <div class="text-center p-4 border-bottom">
             <div class="mb-4">
-                <img src="{% static 'images/users/avatar-1.jpg' %}" class="rounded-circle avatar-lg img-thumbnail" alt="">
+                <img src="{{request.user.avatar.url}}" class="rounded-circle avatar-lg img-thumbnail" alt="">
             </div>
 
             <h5 class="font-size-16 mb-1 text-truncate">{{request.user.name}}</h5>
