@@ -52,3 +52,8 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
+
+
+class Chats(models.Model):
+    members = models.ManyToManyField(User)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
